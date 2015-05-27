@@ -1,0 +1,28 @@
+{
+  "name": "glue",
+  "version": "0.0.1",
+  "description": "Glue for your components",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha src/test --recursive --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fun-stack/glue"
+  },
+  "author": "Rastopyr <rastopyr@gmail.com> (http://rastopyr.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fun-stack/glue/issues"
+  },
+  "homepage": "https://github.com/fun-stack/glue",
+  "dependencies": {
+    "immutable": "^3.7.3",
+    "ramda": "^0.14.0"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.5",
+    "sinon": "^1.14.1"
+  }
+}
