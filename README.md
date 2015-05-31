@@ -1,4 +1,5 @@
-**Glue** - is a module for control you server module, compose them without clear indication that module.
+**Glue** - is a module for control you server module, compose them without
+clear indication that module.
 
 ## Debug mode
 
@@ -26,6 +27,17 @@ component.get('value'); // => 1
 component.redo();
 component.get('value'); // => 2
 ```
+
+**File watching**
+
+When enabled `debug` mode, `glue` watching file in npm directory. If file is
+changed, `glue` makes following:
+
+1. Clear cache of changed module
+2. Return changed version of module in calling `glue.get` method.
+3. Save old version of module in `component.history`
+4. Save old version of file in `component.fileHistory`
+
 
 ## API
 
@@ -61,3 +73,7 @@ glue.register('type2');
 ### .get(name)
 
 Return new Immutable component
+
+### .reload(name)
+
+Clean cache of `name` module.
