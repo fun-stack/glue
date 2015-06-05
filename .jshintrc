@@ -3,5 +3,6 @@
     "module",
     "exports"
   ],
-  "expr": true
+  "expr": true,
+  "esnext": true
 }

@@ -1,10 +1,10 @@
 {
   "name": "glue",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Glue for your components",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha src/test --recursive --watch"
+    "test": "./node_modules/.bin/mocha test --require babel/register --recursive"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "ramda": "^0.14.0"
   },
   "devDependencies": {
+    "babel": "^5.5.3",
     "chai": "^2.3.0",
     "mocha": "^2.2.5",
     "sinon": "^1.14.1"
