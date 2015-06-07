@@ -1,5 +1,18 @@
+
+# Glue
+[![Build Status](https://travis-ci.org/fun-stack/glue.svg?branch=master)](https://travis-ci.org/fun-stack/glue)
+
 **Glue** - is a module for control you server module, compose them without
 clear indication that module.
+
+## Motivation
+At first, support and testing of code. Lost valuable time to restart the application when modifying an existing and writing new code. It bad.
+
+Second, suppose you can just change the code at any time, and watch as it changes. Cool, huh? Yeah, it cool.
+
+Finally, work with the modules in your file system involves unreadable relative paths, like this `../../../../big/relative/path`. It bad.
+
+Glue doing it good.
 
 ## Debug mode
 
