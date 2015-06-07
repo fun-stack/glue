@@ -1,10 +1,10 @@
 {
   "name": "glue",
-  "version": "0.0.6",
+  "version": "0.3.0",
   "description": "Glue for your components",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha test --require babel/register --recursive"
+    "test": "./node_modules/.bin/mocha test --require babel/register --recursive --watch"
   },
   "repository": {
     "type": "git",
